@@ -1,0 +1,166 @@
+/**/
+/*transform: translateX(-40px); */
+
+html {
+}
+
+body {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.4em;
+	position: relative;
+	margin-top: 90px;
+}
+
+
+a {
+	text-decoration: none;
+	color:rgb(0,55,64);
+}
+
+h1, #nav_items a {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color:rgb(0,55,64);
+	letter-spacing: 0.01rem;
+}
+
+
+h2 {
+	font-size: 1.8rem;
+	margin-bottom: 0;
+	font-weight: bold;
+	letter-spacing: 0.01rem;
+}
+
+p, h2 {
+	color:rgb(49,49,49);
+}
+
+hr {
+	margin-top: 5.5rem;
+	margin-bottom: 5.0rem; /* sceleton gibt die margins auch in rem an ...*/
+}
+
+#nav_container {
+	background-color: white;
+	height: 90px;
+	position: fixed;
+	top: 0; left:0; right:0;
+	z-index: 2;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+nav {
+	height: 100%;
+}
+
+#nav_items, .lang_switch {
+	text-align: right;
+	
+}
+
+.lang_switch {
+	padding-top: 20px;
+}
+
+#nav_items {
+}
+
+#nav_items a {
+	font-size: 1.6rem;
+	margin-left: 30px;
+	/*oder aber 3.2% der navbarBreite
+	keine Ahnung was besser wäre ...*/
+}
+
+#nav_items a:hover {
+	border-bottom: 1px solid 
+}
+
+#main_section #vision:target ~ div a[href="#top"] {
+	text-decoration: underline; 
+}
+}
+
+#top:target ~ nav a[href="#top"] , #vision:target a[vision], #contact:target a[contact] {
+	text-decoration: underline; 
+}
+
+#nav_items, #nav_logo {
+	position: absolute;
+	top: 50%; 
+	transform: translateY(-50%);
+}
+
+#nav_items{
+	right:0;
+}
+
+
+#nav_logo {
+	left:0;
+}
+
+#main_section {
+}
+
+#teaserbild {
+	position: relative;
+}
+#teaserbild img{
+	position: relative;
+	width: 100%;
+	min-height:auto;
+
+}
+#teasertext{
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 45%;
+	padding-top: 20px;
+	padding-right: 80px;
+	padding-left: 4.3333333%;
+}
+
+/*
+#teasertext::after {
+	content:'';
+	background-color: blue;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-left: -40px;
+	transform: skew(14deg);
+	z-index: 0;
+}
+*/
+
+#vision{
+	background-image: url(../images/weltkarte.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+	min-height: 330px;
+}
+
+#Leitsatz {
+	font-weight: 200;
+	text-align: center;
+	color: rgb(72, 163, 130);
+	font-size: 2.4rem;
+	line-height: 1.0;
+
+}
+
+footer {
+	display: flex;
+	align-items:center;
+	color: white;
+	min-height: 50px;
+	background: rgb(0, 55, 64);
+}
+
+footer a {color: white;}
